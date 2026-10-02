@@ -1,0 +1,25 @@
+{
+  "input_dim": 9,
+  "features": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Temp_diff [K]",
+    "Power [W]",
+    "Wear_Torque_interaction",
+    "Type_encoded"
+  ],
+  "threshold": 0.01399349793791771,
+  "metrics": {
+    "Model": "Autoencoder (anomaly)",
+    "Threshold": 0.014,
+    "Precision": 0.322,
+    "Recall": 0.2794,
+    "F1": 0.2992,
+    "PR_AUC": 0.2889,
+    "ROC_AUC": 0.8388,
+    "FN_Rate": 0.7206
+  }
+}

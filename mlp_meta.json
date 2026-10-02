@@ -1,0 +1,34 @@
+{
+  "input_dim": 9,
+  "features": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Temp_diff [K]",
+    "Power [W]",
+    "Wear_Torque_interaction",
+    "Type_encoded"
+  ],
+  "default_threshold_metrics": {
+    "Model": "MLP (default thr)",
+    "Threshold": 0.5,
+    "Precision": 0.2844,
+    "Recall": 0.9118,
+    "F1": 0.4336,
+    "PR_AUC": 0.7054,
+    "ROC_AUC": 0.9772,
+    "FN_Rate": 0.0882
+  },
+  "tuned_threshold_metrics": {
+    "Model": "MLP (tuned threshold)",
+    "Threshold": 0.611,
+    "Precision": 0.3352,
+    "Recall": 0.8971,
+    "F1": 0.488,
+    "PR_AUC": 0.7054,
+    "ROC_AUC": 0.9772,
+    "FN_Rate": 0.1029
+  }
+}

@@ -1,0 +1,18 @@
+# Only src/, app/, models/, and requirements.txt are ever COPYed into the
+# image (see Dockerfile) - this just keeps the build context small and fast.
+.git
+.gitignore
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+*.ipynb
+notebooks/
+data/
+evaluation/
+tests/
+.venv/
+venv/
+.env
+*.csv
+README.md

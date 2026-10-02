@@ -1,0 +1,12 @@
+# Optional convenience wrapper around `docker build` + `docker run`.
+# Usage: docker compose up --build
+services:
+  predictive-maintenance-app:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      # Mount prediction_history.csv out to the host so logs survive a
+      # container restart/rebuild instead of vanishing with the container.
+      - ./app/prediction_history.csv:/workspace/app/prediction_history.csv
+    restart: unless-stopped
